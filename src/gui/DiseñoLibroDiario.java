@@ -366,6 +366,7 @@ public class DiseñoLibroDiario extends javax.swing.JFrame {
             model.removeRow(eli);
         }else{
             JOptionPane.showMessageDialog(null, "NO HAY DATOS QUE ELIMINAR");
+            System.out.println("A carlos le apesta la nalga");
         }
     }//GEN-LAST:event_btneliminarActionPerformed
 
