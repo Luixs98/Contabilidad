@@ -328,6 +328,8 @@ public class DiseñoLibroDiario extends javax.swing.JFrame {
         agregar[3]=txtfecha.getText();
         agregar[4]=txtvalor.getText();
         agregar[5]=(String)debeohaber.getSelectedItem();
+        try {
+        if  (agregar[5]!="SELECCIONAR:"){
         i+=1;
         Arreglo[i]=txtvalor.getText();
         int x= Integer.parseInt(txtvalor.getText());
@@ -336,8 +338,15 @@ public class DiseñoLibroDiario extends javax.swing.JFrame {
         System.out.println(sumDebe);
         }else if(agregar[5]=="HABER"){
         sumHaber+= x;  
+            System.out.println(sumHaber);
         } 
-        model.addRow(agregar);
+        model.addRow(agregar);    
+        }else{
+            JOptionPane.showMessageDialog(null, "Seleccione haber o debe");
+            
+        }
+        } catch (Exception e) {
+        }
     }//GEN-LAST:event_btnagregarActionPerformed
 
     private void btnnuevoActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnnuevoActionPerformed
