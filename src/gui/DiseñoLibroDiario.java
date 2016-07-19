@@ -368,7 +368,7 @@ public class DiseñoLibroDiario extends javax.swing.JFrame {
         }else{
             JOptionPane.showMessageDialog(null, "NO HAY DATOS QUE ELIMINAR");
             System.out.println(":V");
-            System.out.println("olo");
+            System.out.println("ol");
         }
     }//GEN-LAST:event_btneliminarActionPerformed
 
