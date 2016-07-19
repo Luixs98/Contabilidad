@@ -355,9 +355,10 @@ public class DiseñoLibroDiario extends javax.swing.JFrame {
         if(eli>=0){
             System.out.println(eli);
             model.removeRow(eli);
+            JOptionPane.showMessageDialog(null, "SE BORRO UNA CUENTA");
         }else{
             JOptionPane.showMessageDialog(null, "NO HAY DATOS QUE ELIMINAR");
-            System.out.println("A carlos le apesta la nalga");
+            System.out.println(":V");
         }
     }//GEN-LAST:event_btneliminarActionPerformed
 
